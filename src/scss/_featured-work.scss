@@ -1,0 +1,93 @@
+.featured-work {
+    background-color: #ffffff;
+    display: flex;
+   @include flex (center, center, column);
+    padding: 50px 0px 50px 0px;
+}
+.featured-work__title {
+    text-transform: uppercase;
+    color: $color_text_grey;
+    font-size: $H300;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 41px;
+}
+.featured-work__subtitle {
+    color: $color_text_grey;
+    font-size: $H50;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.featured-work__image-list {
+    @include flex (start, start, row);
+    min-height: 310px;
+}
+.featured-work__image-list__item:nth-child(1) {
+min-height: 310px;
+flex-basis: 50%;
+}
+.featured-work__image-list__item:nth-child(2) {
+    min-height: 310px;
+flex-basis: 25%;
+}
+.featured-work__image-list__item:nth-child(3) {
+    min-height: 310px;
+flex-basis: 25%;
+}
+.list-image__items-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;  
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 58%;
+    top: 50%;
+}
+.list-image__items-text_branding {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;  
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 85%;
+    top: 50%;
+}
+.featured-work__form {
+    width: 100%;
+    height: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/featured_work/legs.png);
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.featured-work__form:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: #19BD9A;
+    opacity: 60%;
+}
+.featured-work__form__text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;    
+    color: #ffffff;
+    padding-right: 140px;  
+    font-weight: bold;
+    position: absolute;
+    z-index: 3;
+}
+.featured-work__form__button {
+    width: 141px;
+    position: absolute;
+    z-index: 3;
+    left: 80%;
+    transition: all .7s;
+    color:$color_text_white;
+}

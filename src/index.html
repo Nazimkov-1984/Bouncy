@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOUNCY</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/portfolio.css">
-    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="navbar">
+    <section class="main-screen">
+    <header class="navbar">
         <div class="navbar-navigation">
             <img class="navbar-logo" src="./assets/img/Bouncy_logo.png" alt="">
             <ul class="navbar-navigation__nav">
@@ -24,57 +23,64 @@
                 <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Contact</a></li>
             </ul>
         </div>
-        <div class="titles-wrapper">
-            <h1 class="main-title">We Are Code Cafe</h1>
-            <h3 class="main-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</h3>
+    </header>
+        <main>
+            
+        <div class="main-screen__titles-wrapper">
+            <h1 class="main-screen__main-title">We Are Code Cafe</h1>
+            <h3 class="main-screen__main-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</h3>
         </div>
-        <div class="slider">
+        <div class="main-screen__slider">
             <a href="#services">
-            <img class="slider_img" src="./assets/img/Ellipse_slider.png" alt="">
-            <span class="arrow"> > </span> </a>
+            <img class="main-screen__slider_img" src="./assets/img/Ellipse_slider.png" alt="">
+            <span class="main-screen__arrow"> > </span></a>
         </div>
     </section>
-    <section class="about-us">
+
+       <section class="about-us">
         <div class="about-us__text-wrapper">
             <h2 class="about-us-title">This is Bouncy</h2>
             <p class="about-us-main-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-            <div class="about-us-button">
-                <a href="">Read More</a>
-            </div>
+            <a href="#" class="button">Read More</a>
         </div>
         <div class="about-us__ipod-wrapper">
-            <img src="./assets/img/about_us_img/IPAD.png" alt="">
+            <img src="./assets/img/about_us_img/IPAD.png" alt="iphone">
         </div>
     </section>
     <section class="about-us-details">
-        <h2 class="about-us-details__title">DetailS ABOUT BOUNCY</h2>
+        <h2 class="about-us-details__title">Details ABOUT BOUNCY</h2>
         <p class="about-us-details__subtitile">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         <div class="about-us-details__icons-wrapper">
             <ul class="about-us-details__icons-list">
-                <li class="about-us-details__icons-items"><a href="#"><img src="./assets/img/about_us_details_img/Ellipse_cyan.png" alt=""></a> <img class="first_img" src="./assets/img/about_us_details_img/heart.svg" alt=""></li>
+                <li class="about-us-details__icons-items"><a href="#"><img src="./assets/img/about_us_details_img/Ellipse_grey.png" alt=""></a> <img class="first_img" src="./assets/img/about_us_details_img/heart.svg" alt=""></li>
                 <li class="about-us-details__icons-items"><a href="#"><img src="./assets/img/about_us_details_img/Ellipse_grey.png" alt=""></a><img class="second_img" src="./assets/img/about_us_details_img/computer.svg" alt=""></li>
                 <li class="about-us-details__icons-items"><a href="#"><img src="./assets/img/about_us_details_img/Ellipse_grey.png" alt=""></a><img class="third_img" src="./assets/img/about_us_details_img/lamp.svg" alt=""></li>
             </ul>
         </div>
-        <h2 class="about-us-details__second-title">Creative Ideas</h2>
+        
         <div class="about-us-details__column">
-            <p class="about-us-details__column-p">At <a class="cyan_link" href="">vero</a> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-            <p class="about-us-details__column--right">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias excepturi sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+            <div class="about-us-details__column-p">
+                <h2 class="about-us-details__second-title">Creative Ideas</h2>
+                At <a class="cyan_link" href="">vero</a> eos et accusamus et iusto odio dignissimos <b>ducimus</b> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </div>
+            <p class="about-us-details__column--right">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque <b>corrupti quos</b> dolores et quas molestias <a class="cyan_link" href=""> excepturi </a> sint occaecati cupiditate non provident, <b>similique</b> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
         </div>
-    </section>
+    </section> 
     <section class="featured-work">
         <h2 class="featured-work__title">FEATURED PROJECTS</h2>
         <p class="featured-work__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-        <div class="list-image">
-            <img class="list-image__items list-image__items--big" src="./assets/img/featured_work/vintage.png" alt="">
-            <img class="list-image__items list-image__items--small " src="./assets/img/featured_work/wiskey.png" alt=""> <p class="list-image__items-text">Vintage</p>
-            <img class="list-image__items list-image__items--small" src="./assets/img/featured_work/branding.png" alt=""> <p class="list-image__items-text_branding">Branding</p>
-        </div>
+       <ul class="featured-work__image-list">
+           <li class="featured-work__image-list__item"><img src="./assets/img/featured_work/vintage.png" alt=""></li>
+           <li class="featured-work__image-list__item"><img src="./assets/img/featured_work/branding.png" alt=""></li>
+           <li class="featured-work__image-list__item"> <img src="./assets/img/featured_work/wiskey.png" alt=""></li>
+       </ul>
+            
+            <p class="list-image__items-text">Vintage</p>
+            <p class="list-image__items-text_branding">Branding</p>
         <div class="featured-work__form">
             <span class="featured-work__form__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </span>
-            <button class="featured-work__form__button" >Submit now</button>
+            <a href="#" class="button featured-work__form__button">Submit Now</a>
         </div>
-    </section>
+    </section> <!--- 
     <div class="mack-book-wrapper">
     <section class="our-servises">
         <a href="" name = "services"></a>
@@ -158,7 +164,7 @@
             </div>
         </div>
     </section>
-    <!------------------>
+  
     <section class="form">
         <p class="form__text"> At vero eos et <span>accusamus</span> et iusto odio <span>dignissimos</span> ducimus qui blanditiis </p>
         <a  class="form__button" href="#">Start Project</a>
@@ -228,5 +234,6 @@
     <section></section>
     <section></section>
     <section></section>
+</main>
 </body>
 </html>

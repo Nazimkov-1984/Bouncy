@@ -1,0 +1,18 @@
+@import "../vars";
+.button {
+    display: inline-block;
+   padding: 10px 20px 10px 20px;
+   border: 1px solid $border_color_button;
+   border-top-left-radius:20px;
+   border-bottom-left-radius: 20px;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+   text-align: center; 
+   transition: all .6s;
+   color: $color_text_grey;
+   font-size: $H100;
+}
+.button:hover {
+    background-color: $color_hover_button;
+    color: $color_text_white;
+}

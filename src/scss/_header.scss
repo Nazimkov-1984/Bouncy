@@ -1,0 +1,45 @@
+.navbar {
+    @include flex (end, center, row);
+}
+.navbar-navigation {
+    @include flex (center, center, row);
+}
+.navbar-logo {
+    width: 83px;
+    height: 24px;
+}
+.navbar-navigation__nav {
+@include flex (center,center,row);
+}
+.navbar-navigation__nav--items {
+    border: 1px solid transparent;
+    font-size: 17px;
+    color: $color_text_white;
+    transition: all .7s;
+}
+.navbar-navigation__nav--items__link {
+    font-size: $H100;
+    color: $color_text_white;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    margin-right: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .7s;
+}
+.navbar-navigation__nav--items__link:before {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navbar-navigation__nav--items__link:hover {
+    cursor: pointer;
+    border: 1px solid $border_color_white;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
