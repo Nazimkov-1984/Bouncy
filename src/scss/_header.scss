@@ -1,5 +1,5 @@
 .navbar {
-    @include flex (end, center, row);
+    @include flex (space-around, center, row);
 }
 .navbar-navigation {
     @include flex (center, center, row);
@@ -7,6 +7,7 @@
 .navbar-logo {
     width: 83px;
     height: 24px;
+    margin-right: 150px;
 }
 .navbar-navigation__nav {
 @include flex (center,center,row);
