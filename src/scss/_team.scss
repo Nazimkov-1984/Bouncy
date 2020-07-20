@@ -1,0 +1,121 @@
+.team {
+ @include flex (center, center, column);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.team__card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.team__title {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color: $color_text_button;
+    margin-bottom: 41px;
+}
+.team__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    color: $color_text_button;
+    margin-bottom: 62px;
+    text-align: center;
+    width: 360px;
+}
+.team__image__wrapper {
+    flex-basis: 50%;
+}
+.team__card__text-wrapper {
+    @include flex (center, flex-end, column);
+}
+.team__member__name, .team__member__position,.team__member__text {
+    padding-right: 42px;
+}
+.team__member__name {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    margin-bottom: 15px;
+    text-align: right;
+    border-right: 4px solid transparent;
+    transition: all .7s;
+}
+.team__member__position {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    color: $color_text_grey;
+    font-weight: 600;
+    text-align: right;
+    border-right: 4px solid transparent;
+    transition: all .7s;
+}  
+.team__member__text {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    margin-bottom: 32px;
+    color: $color_text_grey;
+    line-height: 25px;
+    text-align: right;
+    border-right: 4px solid transparent;
+    transition: all .7s;
+}
+.team__member__name:hover, .team__member__position:hover, .team__member__text:hover {
+    border-right: 4px solid $color_hover_button;
+    cursor: pointer;
+}
+.team__member__statik-wrapper {
+    padding-right:42px;
+    width: 90%;
+}
+.team__member__statik__name {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H100;
+    color: $color_text_grey;
+    font-weight: 700;
+
+}
+.team__member__statik__persent {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H100;
+    color: $color_text_grey;
+    font-weight: 700;
+}
+.team__member__statik__text {
+    display: flex;
+    justify-content: space-between;
+}
+progress {
+    width: 100%;
+    height: 5px;
+}
+
+.team__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination__items {
+    margin-right: 10px;
+    width: 11px;
+    height: 11px;
+    background-color: #19BD9A;
+    border-radius: 50%;
+}
+
+.pagination__items:last-child {
+    margin-right: 0px;
+}
+.pagination__items--active {
+    border-radius: 50%;
+    border: 1px solid #19BD9A; ;
+    background-color: transparent;
+    width: 13px;
+    height: 13px;
+}
+.pagination__items:hover {
+    cursor: pointer;
+}
