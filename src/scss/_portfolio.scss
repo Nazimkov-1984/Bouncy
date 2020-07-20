@@ -33,14 +33,22 @@
 }
 .portfolio__image__wrapper {
    @include flex (space-between, stretch, row);
-   height: 600px;
   }
   .portfolio__image-col1, .portfolio__image-col2, .portfolio__image-col3, .portfolio__image-col4  {
       @include flex (space-between, stretch, column); 
-      height: 600px;
+      height: 1007px;
       flex-basis: 25%;
+      margin-right: 5px;
+}
+.portfolio__image-col1:last-child , .portfolio__image-col2:last-child , .portfolio__image-col3:last-child , .portfolio__image-col4:last-child  {
+   margin-right: 0px;
 }
 .portfolio__image-col1__items, .portfolio__image-col2__items, .portfolio__image-col3__items, .portfolio__image-col4__items  {
     width: 100%;  
     height: 100%;
+    margin-bottom: 5px;
+}
+.portfolio__image-col1__items:last-child, .portfolio__image-col2__items:last-child, .portfolio__image-col3__items:last-child, .portfolio__image-col4__items:last-child  {
+    
+    margin-bottom: 0px;
 }
