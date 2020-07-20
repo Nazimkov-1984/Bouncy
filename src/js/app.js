@@ -64,3 +64,34 @@ const   tabsTestimonials = document.querySelectorAll('.testimonials__card-wrappe
         });
     }
 });
+//  TABS BLOG 
+const   tabsBlog = document.querySelectorAll('.blog__card-wrapper'),
+        bulletBlog = document.querySelectorAll('.blog__pagination__items'),
+        bulletParentBlog = document.querySelector('.blog__pagination');
+
+    function hideTabBlog () {
+        tabsBlog.forEach (item => {
+            item.style.display = 'none';
+        });
+        bulletBlog.forEach(item => {
+            item.classList.remove('blog__pagination__items--active');
+        });
+    }
+    function showTabBlog (i) {
+        tabsBlog[i].style.display = 'block';
+        bulletBlog[i].classList.add('blog__pagination__items--active');
+
+    }
+    hideTabBlog ();
+    showTabBlog (0);
+    bulletParentBlog.addEventListener('click', () => {
+    const target = event.target;
+    if (target && target.classList.contains('blog__pagination__items')) {
+        bulletBlog.forEach ( (item, i) => {
+            if (target === item) {
+                hideTabBlog ();
+                showTabBlog (i); 
+            }
+        });
+    }
+});
