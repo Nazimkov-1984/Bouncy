@@ -94,9 +94,7 @@ progress {
 }
 
 .team__pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @include flex (center, center, row);
 }
 .pagination__items {
     margin-right: 10px;

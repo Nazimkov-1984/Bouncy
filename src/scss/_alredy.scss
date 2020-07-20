@@ -1,0 +1,33 @@
+
+.alredy {
+    padding-top: 59px;
+    padding-bottom: 58px;
+  @include flex (center, center, column);
+    background: url(../assets/img/alredy/alredy__bg.png);
+    position: relative;
+}
+.alredy::before {
+    opacity: 80%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #060606;
+}
+.alredy__title {
+    position: relative;
+    margin-bottom: 27px;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    font-weight: 900;
+    color: #ffffff;
+
+}
+.alredy__button {
+    position: relative;
+    color: #ffffff;
+    border-color: #ffffff;
+
+}

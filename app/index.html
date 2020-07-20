@@ -15,12 +15,12 @@
             <img class="navbar-logo" src="./assets/img/Bouncy_logo.png" alt="">
             <ul class="navbar-navigation__nav">
                 <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Hello</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">About</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Servises</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Portfolio</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Team</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Blog</a></li>
-                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#">Contact</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#about_us">About</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#services">Servises</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#portfolio">Portfolio</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#team">Team</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#blog">Blog</a></li>
+                <li class="navbar-navigation__nav--items"><a class="navbar-navigation__nav--items__link" href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -31,13 +31,13 @@
             <h3 class="main-screen__main-subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</h3>
         </div>
         <div class="main-screen__slider">
-            <a href="#services">
+            <a href="#about_us">
             <img class="main-screen__slider_img" src="./assets/img/Ellipse_slider.png" alt="">
             <span class="main-screen__arrow"> > </span></a>
         </div>
     </section>
 
-       <section class="about-us">
+       <section class="about-us" id="about_us">
         <div class="about-us__text-wrapper">
             <h2 class="about-us-title">This is Bouncy</h2>
             <p class="about-us-main-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
@@ -81,8 +81,7 @@
             <a href="#" class="button featured-work__form__button">Submit Now</a>
         </div>
     </section> 
-    <section class="our-servises">
-        <a href="" name = "services"></a>
+    <section class="our-servises" id="services">
         <h2 class="our-servises__title">Our Services</h2>
         <p class="our-servises__subtitle">At vero eos et <b>accusamus</b> et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         <div class="content-wrapper">
@@ -132,7 +131,7 @@
             </div> 
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title">THE PORTFOLIO</h2>
         <p class="portfolio__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         <ul class="portfolio__nav">                                       
@@ -173,7 +172,7 @@
         <a  class="button form__button" href="#">Start Project</a>
     </section>
       
-    <section class="team">
+    <section class="team" id="team">
         <h1 class="team__title">The Team</h1>
         <p class="team__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         <ul class="team__tabs">
@@ -284,17 +283,22 @@
             <div class="pagination__items"></div>
             <div class="pagination__items pagination__items--active"></div>
             <div class="pagination__items"></div>
+        </div>
     </section>
-    <script src="js/bundle.js"></script>
+    
 
-    <!--- 
-    <section class="alredy">
-<h1 class="alredy__title">Already Loved Us? Let’s talk!</h1>
-<a class="alredy__button" href="#">Contact Us</a>
-    </section>
-    <section class="testimonials" >
+    
+<section class="alredy">
+    <h1 class="alredy__title">Already Loved Us? Let’s talk!</h1>
+    <a class=" button alredy__button" href="#">Contact Us</a>
+</section>
+
+
+<section class="testimonials" >
        <h1 class="testimonials__title">Testimonials</h1> 
        <h2 class="testimonials__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </h2>
+
+
        <div class="testimonials__card-wrapper">
            <img class="testimonials__card__img" src="./assets/img/testimonikal/testimonikal__img.png" alt="">
            <div class="testimonials__card__text">
@@ -303,7 +307,33 @@
                <p class="testimonials__card__text__position">FOUNDER, ARTWAYS BD</p>
            </div>
        </div>
+
+       <div class="testimonials__card-wrapper">
+            <img class="testimonials__card__img" src="./assets/img/testimonikal/2.png" alt="">
+            <div class="testimonials__card__text">
+            <p class="testimonials__card__text__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus fuga aspernatur, reiciendis quam a saepe similique deleniti deserunt natus eligendi porro ullam? Ad vero eaque eum, deserunt corrupti dicta, inventore fugit nihil eveniet rem vel.</p>
+            <p class="testimonials__card__text__name" >ERNESTO</p>
+            <p class="testimonials__card__text__position">DIRECTOR, ADOBE XD</p>
+            </div>
+        </div>
+
+        <div class="testimonials__card-wrapper">
+            <img class="testimonials__card__img" src="./assets/img/testimonikal/3.png" alt="">
+            <div class="testimonials__card__text">
+            <p class="testimonials__card__text__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet incidunt officia quae unde eveniet, fugit nihil quasi dolore ipsam illum repudiandae sunt aut deleniti illo doloribus, voluptatum, fugiat laudantium voluptate! Aut voluptatem nisi deserunt.</p>
+            <p class="testimonials__card__text__name" >MIKKEY</p>
+            <p class="testimonials__card__text__position">CREATOR, YANDEX RU</p>
+            </div>
+        </div>
+
+       <div class="testimonials__pagination">
+            <div class="testimonials__pagination__items"></div>
+            <div class="testimonials__pagination__items testimonials__pagination__items--active"></div>
+            <div class="testimonials__pagination__items"></div>
+        </div>
     </section>
+    <script src="js/bundle.js"></script>
+    <!--- 
     <section class="blog">
         
     </section>
