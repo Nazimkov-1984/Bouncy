@@ -1,0 +1,76 @@
+.impressed {
+    @include flex (center, flex-start, column);
+    background-image: url(/assets/img/impressed/background_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 82px 0px 101px 0px;
+   
+}
+.impressed:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: #000000;
+    opacity: 70%;
+    z-index: 2;
+}
+.impressed__text-wrapper{
+    width: 50%;
+    padding-left: 80px;
+}
+.impressed__title {
+    position: relative;
+    z-index: 3;
+    font-size: $H300;
+    font-family: 'Source Sans Pro', sans-serif;   
+    color:  $color_text_white;
+    margin-bottom: 60px;
+}
+.impressed__text {
+    position: relative;
+    z-index: 3;
+    font-size: $H100;
+    font-family: 'Source Sans Pro', sans-serif;   
+    color: $color_text_white;
+    text-align: left;
+    margin-bottom: 34px;
+}
+.impressed__signature__wrapper {
+    @include flex(flex-start, flex-start, row);
+}
+.impressed__signature, .impressed__position {
+    position: relative;
+    z-index: 3;
+    font-size: $H50;
+    font-family: 'Source Sans Pro', sans-serif;   
+    color: $color_text_white;
+    text-transform: uppercase;
+    text-align: left;
+}
+.impressed__signature {
+    position: relative;
+    z-index: 3;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.impressed__position {
+}
+.impressed__position--link {
+    position: relative;
+    z-index: 3;
+    text-transform: uppercase;
+    color:  $color_text_icon;
+    font-weight: bold;
+}
+.mack-book-wrapper--img{
+    position: relative;
+    z-index: 3;
+    top:-450px;
+    left: 60%;
+}
