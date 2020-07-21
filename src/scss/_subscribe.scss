@@ -1,0 +1,58 @@
+.subscribe{
+    @include flex (center, center, column);
+    padding-top: 82px;
+    padding-bottom: 100px;
+    background: url(../assets/img/Layer449.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.subscribe::before {
+    opacity: 95%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #060606;
+}
+.subscribe__title {
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color:  $color_text_white;
+    margin-bottom: 41px;
+    position: relative;
+    z-index: 3;
+}
+.subscribe__subtitle{
+    position: relative;
+    z-index: 3;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    color:$color_text_grey;
+    line-height: 25px;
+    text-align: center;
+    width: 457px;
+    margin-bottom: 60px;
+}
+.subscribe__input{
+    position: relative;
+    z-index: 3;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 16px 0px 16px 25px;
+    min-width: 520px;
+}
+.subscribe__button{
+    position: relative;
+    z-index: 3;
+    padding: 18px 50px 18px 50px;
+    background-color:$color_hover_button;
+    border: none;
+    transition: all .8s;
+}
+.subscribe__button:hover {
+background-color:$color_text_grey;
+cursor: pointer;
+}

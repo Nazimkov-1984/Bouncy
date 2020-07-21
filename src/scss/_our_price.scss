@@ -1,0 +1,81 @@
+.our_price{
+    @include flex (center, center, column);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #F3F3F3;
+}
+.our_price__title{
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color:  $color_text_button;
+    margin-bottom: 41px;
+}
+.our_price__subtitle{
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    color:$color_text_grey;
+    line-height: 25px;
+    text-align: center;
+    width: 457px;
+    margin-bottom: 60px;
+}
+.our_price__card-wrapper {
+    @include flex (center, center, row);
+    
+}
+.our_price__card-item {
+    @include flex (center, center, column);
+    margin-right: 65px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    transition: all .8s;
+}
+.our_price__card-item:last-child {
+margin-right: 0px;
+}
+.our_price__card-item:hover {
+    cursor: pointer;
+    border: 1px solid   $color_hover_button;
+    transform: scale(1.1);
+}
+.our_price__card-item__title{
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color:  $color_text_white;  
+    background-color:   $color_hover_button;
+    margin-bottom: 67px;
+    padding: 28px 63px 28px 63px;
+    font-weight: bold;
+}
+.our_price__card-item__price{
+    font-family: 'Areal', sans-serif;   
+    font-size: $H300;
+    color:$color_text_icon;  
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.our_price__card-item__period{
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color:$color_text_grey;  
+    padding-bottom: 107px;
+}
+.our_price__card-item__text{
+    display: none;
+font-family: 'Source Sans Pro', sans-serif;   
+font-size: $H50;
+color:$color_text_grey; 
+width: 216px; 
+padding: 36px 30px 36px 30px;
+text-align: center;
+line-height: 40px;
+}
+.our_price__card-item__button{
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H300;
+    color:  $color_text_white;  
+    background-color:   $color_hover_button;
+    padding: 28px 63px 28px 63px;
+    font-weight: bold;
+}
