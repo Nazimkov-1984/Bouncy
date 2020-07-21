@@ -20,6 +20,7 @@
     text-transform: uppercase;
     padding-bottom: 43px;
     font-family: 'Source Sans Pro', sans-serif;
+    mix-blend-mode: overlay;
 }
 .main-screen__main-subtitle {
     line-height: 30px;
@@ -28,6 +29,8 @@
     font-family: 'Source Sans Pro', sans-serif;
     color: $color_text_white;
     font-size: $H100;
+    mix-blend-mode: overlay;
+
 }
 .main-screen__slider {
     @include flex (center, center,row);

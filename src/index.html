@@ -419,27 +419,279 @@
         <p class="contact__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
         <ul class="contact__cards" >
             <li class="contact__cards__items">
-                <div class="contact__cards__items__image-wrap"></div>
+                <div class="contact__cards__items__image-wrap contact__cards__items__image-wrap--mail">
+                    <img src="./assets/img/contact/11.png" alt="">
+                </div>
                 <p class="contact__cards__items__title">EMAIL</p>
                 <a class="contact__cards__items__contact1" href="mailto:cahee@domain.com">hello@codecafe.com</a>
                 <a class="contact__cards__items__contact2" href="mailto:cahee@domain.com">Personal@codecafe.com</a>
             </li>
             <li class="contact__cards__items">
-                <div class="contact__cards__items__image-wrap"></div>
-                <p class="contact__cards__items__title">EMAIL</p>
+                <div class="contact__cards__items__image-wrap contact__cards__items__image-wrap--adress">
+                    <img src="./assets/img/contact/22.png" alt="">
+                </div>
+                <p class="contact__cards__items__title">OUR OFFICE</p>
                 <a class="contact__cards__items__contact1" href="https://www.google.com.ua/maps/place/%D0%9D%D0%B8%D0%B3%D0%B5%D1%80%D0%B8%D1%8F/@9.0174021,4.1813675,2222424m/data=!3m2!1e3!4b1!4m13!1m7!3m6!1s0x10613753703e0f21:0x2b03c44599829b53!2z0JrQsNC80LXRgNGD0L0!3b1!8m2!3d7.369722!4d12.354722!3m4!1s0x104e0baf7da48d0d:0x99a8fe4168c50bc8!8m2!3d9.5736677!4d8.0749512?hl=ru">240 Bhatikhana, 8200 Barisal</a>
                 <a class="contact__cards__items__contact2" href="https://www.google.com.ua/maps/place/%D0%9D%D0%B8%D0%B3%D0%B5%D1%80%D0%B8%D1%8F/@9.0174021,4.1813675,2222424m/data=!3m2!1e3!4b1!4m13!1m7!3m6!1s0x10613753703e0f21:0x2b03c44599829b53!2z0JrQsNC80LXRgNGD0L0!3b1!8m2!3d7.369722!4d12.354722!3m4!1s0x104e0baf7da48d0d:0x99a8fe4168c50bc8!8m2!3d9.5736677!4d8.0749512?hl=ru">Bangladesh</a>
             </li>
             <li class="contact__cards__items">
-                <div class="contact__cards__items__image-wrap"></div>
-                <p class="contact__cards__items__title">EMAIL</p>
+                <div class="contact__cards__items__image-wrap contact__cards__items__image-wrap--phone">
+                    <img src="./assets/img/contact/33.png" alt="">
+                </div>
+                <p class="contact__cards__items__title">PHONE</p>
                 <a class="contact__cards__items__contact1" href="tel:+00 11 66 99 66 44">+00 11 66 99 66 44</a>
                 <a class="contact__cards__items__contact2" href="tel:+00 11 66 99 66 44">11 99 66 44 065</a>
             </li>
         </ul>
     </section>
+    <section class="big_form">
+        <form class="big_form__form" action="submit">
+            <div class="big_form__form__input-wrapper">
+            <input class="big_form__input-name" type="text" placeholder="Your name">
+            <input class="big_form__input-email" type="email" placeholder="Email address">
+            <input class="big_form__input-subject" type="text" placeholder="Subject">
+            </div>
+            <textarea class="big_form__input-textarea" name="" id="" cols="30" rows="10"></textarea>
+            <button class="big_form__button" type="submit">SUBMIT NOW</button>
+        </form>
+    </section>
+    <div class="map">
+        <div class="container">
+            
+            
+            <div id="map" class="map" style="position: relative; overflow: hidden; height: 700px"></div>
+            <script>
+              function initMap() {
+        
+                // Create a new StyledMapType object, passing it an array of styles,
+                // and the name to be displayed on the map type control.
+                var styledMapType = new google.maps.StyledMapType(
+                    [
+      {
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#212121"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.icon",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#212121"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.country",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#9e9e9e"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.land_parcel",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        "featureType": "administrative.locality",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#bdbdbd"
+          }
+        ]
+      },
+      {
+        "featureType": "poi",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#181818"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "poi.park",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+          {
+            "color": "#1b1b1b"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+          {
+            "color": "#2c2c2c"
+          }
+        ]
+      },
+      {
+        "featureType": "road",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#8a8a8a"
+          }
+        ]
+      },
+      {
+        "featureType": "road.arterial",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#373737"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#3c3c3c"
+          }
+        ]
+      },
+      {
+        "featureType": "road.highway.controlled_access",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#4e4e4e"
+          }
+        ]
+      },
+      {
+        "featureType": "road.local",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#616161"
+          }
+        ]
+      },
+      {
+        "featureType": "transit",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#757575"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+          {
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "featureType": "water",
+        "elementType": "labels.text.fill",
+        "stylers": [
+          {
+            "color": "#3d3d3d"
+          }
+        ]
+      }
+    ],
+                    {name: 'Styled Map'});
+        
+                // Create a map object, and include the MapTypeId to add
+                // to the map type control.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 23.479, lng: 90.256},
+                  zoom: 14,
+                  streetViewControl: false,
+                  mapTypeControlOptions: {
+                    mapTypeIds: ['roadmap']
+                  }
+                });
+                
+        
+                var marker = new google.maps.Marker({
+                  position: map.getCenter(),
+                  map: map,
+                  animation: google.maps.Animation.BOUNCE
+                });
+        
+                //Associate the styled map with the MapTypeId and set it to display.
+                map.mapTypes.set('styled_map', styledMapType);
+                map.setMapTypeId('styled_map');
+              }
+            </script>
+            
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo-CoLLmc0Yt9wS7PmfMp3VlF8MmCvr-k&callback=initMap">
+            </script>
 </main>
 <footer>
+    <p class="footer__title">Bouncy</p>
+    <p class="footer__copyright">Copyright 2020. All rights Reserved</p>
+    <ul class="footer__social-icon">
+        <li class="footer__social-icon__items"><img src="./assets/img/footer/fa.png" alt=""></li>
+        <li class="footer__social-icon__items"><img src="./assets/img/footer/inst.png" alt=""></li>
+        <li class="footer__social-icon__items"><img src="./assets/img/footer/ln.png" alt=""></li>
+        <li class="footer__social-icon__items"><img src="./assets/img/footer/tw.png" alt=""></li>
+        <li class="footer__social-icon__items"><img src="./assets/img/footer/vimeo.png" alt=""></li>
+    </ul>
 </footer>
 <script src="js/bundle.js"></script>
 </body>

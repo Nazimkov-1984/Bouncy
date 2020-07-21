@@ -1,0 +1,48 @@
+.big_form {
+    @include flex (center, center, column);
+    padding-top: 80px;
+    padding-bottom: 129px;
+
+}
+.big_form__form__input-wrapper {
+    display: flex;
+    margin-bottom: 28px;
+}
+.big_form__input-name, .big_form__input-email, .big_form__input-subject {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    border: 1px solid $color_text_grey;
+}
+.big_form__input-name{
+    min-width: 288px;
+    margin-right: 28px;
+}
+.big_form__input-email{
+    min-width: 288px;
+    margin-right: 28px;
+
+}
+.big_form__input-subject{
+    min-width: 288px;
+}
+.big_form__input-textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 28px;
+    border: 1px solid $color_text_grey;
+}
+.big_form__button{
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: $H100;
+    width: 100%;
+    background-color: $color_hover_button;
+    padding: 20px 0px 20px 0px;
+    color: $color_text_white;
+    border: 3px solid transparent;
+    transition: all .8s;
+}
+.big_form__button:hover{
+    border-color: $color_text_grey;
+    cursor: pointer;
+}

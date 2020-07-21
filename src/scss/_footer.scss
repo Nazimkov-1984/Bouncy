@@ -1,0 +1,31 @@
+footer {
+    @include flex (center, center, column);
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.footer__title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H400;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.footer__copyright{
+    font-family: 'Source Sans Pro', sans-serif;   
+    font-size: $H50;
+    color: $color_text_grey;
+    margin-bottom: 36px;
+}
+.footer__social-icon{
+    display: flex;
+}
+.footer__social-icon__items{
+    margin-right: 10px;
+}
+.footer__social-icon__items:last-child{
+    margin-right: 0px;
+
+}
+.footer__social-icon__items:hover {
+cursor: pointer;
+}
