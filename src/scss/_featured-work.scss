@@ -59,7 +59,7 @@ width: 50%;
     width: 100%;
     height: 116px;
     @include flex (center, center, row);
-    background-image: url(/assets/img/featured_work/legs.png);
+    background-image: url(../assets/img/featured_work/legs.png);
     background-position: center;
     position: relative;
     z-index: 1;
