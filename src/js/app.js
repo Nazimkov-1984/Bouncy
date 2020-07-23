@@ -100,34 +100,36 @@ const   priceTitle = document.querySelectorAll('.our_price__card-item__title'),
         pricePrice = document.querySelectorAll('.our_price__card-item__price'),
         pricePeriod = document.querySelectorAll('.our_price__card-item__period'), 
         priceText = document.querySelectorAll('.our_price__card-item__text'),
-        pricebutton = document.querySelectorAll('.our_price__card-item__button'),
-        priceCards = document.querySelectorAll('.our_price__card-item'),
-        priceCardparent = document.querySelector('.our_price__card-wrapper');
-
-        function hidePrice () {
-           
+        priceButton = document.querySelectorAll('.our_price__card-item__button'),
+        priceCards = document.querySelectorAll('.our_price__card-item');
+        
+        function hideText() {
             priceText.forEach (item => {
                 item.style.display = 'none';
             });
-            pricebutton.forEach (item => {
+            priceButton.forEach (item => {
                 item.style.display = 'none';
             });
+            
         }
-        function showPrice (i) {
-            priceText[i].style.display = 'block';
-            pricebutton[i].style.display = 'block';
+        hideText();
+        
 
-        }
-        hidePrice ();
-        showPrice (0);
-        priceCardparent.addEventListener('click', () => {
-        const target = event.target;
-        if (target && target.classList.contains('our_price__card-item')) {
-            priceCards.forEach ( (item, i) => {
-                if (target === item) {
-                    hidePrice ();
-                    showPrice(i); 
+        for (let i=0; i<priceCards.length; i++){
+            priceCards[i].addEventListener ('click', () => {
+                const styl = window.getComputedStyle(priceTitle[i]);
+                if (styl.display === 'block'){
+                    priceTitle[i].style.display = 'none';
+                    pricePrice[i].style.display = 'none';
+                    pricePeriod[i].style.display = 'none';
+                    priceButton[i].style.display = 'block';
+                    priceText[i].style.display = 'block';
+                } else {
+                    priceTitle[i].style.display = 'block';
+                    pricePrice[i].style.display = 'block';
+                    pricePeriod[i].style.display = 'block';
+                    priceButton[i].style.display = 'none';
+                    priceText[i].style.display = 'none';
                 }
-            });
-        }
-    });
+            })
+        }  
